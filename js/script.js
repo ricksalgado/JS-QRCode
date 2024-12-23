@@ -1,9 +1,15 @@
 const container = document.querySelector('.container');
 const qrCodeBtn = document.querySelector('#qr-form button');
 
+const qrCodeInput = document.querySelector('#qr-form input')
+
 // Eventos
 function generateQR(){
-    console.error('acionou legal')
+
+    const qrCodeInputValue = qrCodeInput.value
+
+    console.log(qrCodeInputValue);
+
 }
 
 qrCodeBtn.addEventListener('click', () => {
