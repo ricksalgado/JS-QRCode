@@ -28,5 +28,12 @@ function generateQR(){
 }
 
 qrCodeBtn.addEventListener('click', () => {
-    generateQR()
+    generateQR();
+})
+
+
+qrCodeInput.addEventListener('keydown', (e) => {
+    if(e.code === "Enter"){
+        generateQR();
+    }
 })
