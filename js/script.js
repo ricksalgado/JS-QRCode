@@ -37,3 +37,11 @@ qrCodeInput.addEventListener('keydown', (e) => {
         generateQR();
     }
 })
+
+// cleaning area
+qrCodeInput.addEventListener("keyup", () => {
+    if(!qrCodeInput.value){
+        container.classList.remove('active');
+        qrCodeBtn.innerHTML = 'Generate QR Code';
+    }
+})
